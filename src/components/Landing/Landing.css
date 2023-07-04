@@ -1,0 +1,56 @@
+.background-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.landing .first {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.landing .first header {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2vh;
+}
+.landing .first header img {
+  width: 35%;
+  padding: 0 0 0 8vw;
+  cursor: pointer;
+}
+.landing .first header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0 10vw 0 0;
+  align-items: center;
+  gap: 4vw;
+}
+.landing .first header nav ul li {
+  list-style: none;
+  cursor: pointer;
+}
+.landing .first header nav ul .login {
+  border: 1px solid white;
+  background-color: inherit;
+  color: white;
+  padding: 1vw 2.5vw;
+  cursor: pointer;
+}
+.landing .first header nav ul .signup {
+  background-color: white;
+  color: rgb(45, 158, 170);
+  padding: 1vw 2.5vw;
+  cursor: pointer;
+}/*# sourceMappingURL=Landing.css.map */

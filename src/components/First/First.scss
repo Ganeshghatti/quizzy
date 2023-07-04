@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500;800&family=PT+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: linear-gradient(90deg, #a100ffff 0%, #71c4ffff 100%);
+}
+.Start {
+  width: 100vw;
+  height: 100vh;
+  .select-category {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    h2 {
+      text-align: center;
+      font-family: "Nunito", sans-serif;
+    }
+    .categories {
+      width: 55vw;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3vw;
+    }
+  }
+}
+.Start {
+  .select-difficulty {
+    color: white;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    h2 {
+      text-align: center;
+      font-family: "Nunito", sans-serif;
+    }
+    .difficulties {
+      padding: 2vw 5vw;
+      width: 18vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5vh;
+      justify-content: center;
+      div {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .difficulty-text {
+          display: flex;
+          flex-direction: column;
+          .difficulty-radio {
+            display: flex;
+            flex-direction: row;
+            label {
+              font-family: "PT Sans", sans-serif;
+              font-size: clamp(1.2vw,1.2rem, 2vw);
+            }
+          }
+          .point-value {
+            font-family: "PT Sans", sans-serif;
+            font-size: clamp(0.8vw,0.8rem, 2vw);
+          }
+        }
+      }
+    }
+  }
+}
+.difficulty-img {
+  width: 7vw;
+}
+@media screen and (max-width: 800px) {
+  .Start {
+    .select-difficulty {
+      .categories {
+        width: 100vw;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+    .Start {
+      padding: 10vw 0;
+      .select-category {
+        .difficulties {
+          width: 100vw;
+        }
+      }
+    }
+  }

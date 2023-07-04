@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500;800&display=swap");
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin heading($color) {
+  font-size: clamp(2.5vw, 2.5rem, 4vw);
+  color: $color;
+  text-align: center;
+}
+.background-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.landing {
+  .first {
+    color: white;
+    @include flex(column);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    header {
+      @include flex(row);
+      width: 100vw;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 2vh;
+      img {
+        width: 35%;
+        padding: 0 0 0 8vw;
+        cursor: pointer;
+      }
+      nav ul {
+        @include flex(row);
+        padding: 0 10vw 0 0;
+        align-items: center;
+        gap: 4vw;
+        li {
+          list-style: none;
+          cursor: pointer;
+        }
+        .login {
+          border: 1px solid white;
+          background-color: inherit;
+          color: white;
+          padding: 1vw 2.5vw;
+          cursor: pointer;
+        }
+        .signup {
+          background-color: white;
+          color: rgb(45, 158, 170);
+          padding: 1vw 2.5vw;
+          cursor: pointer;
+        }
+      }
+    }
+    .first-content {
+      @include flex(column);
+      width: 25vw;
+      justify-content: center;
+      margin: 7vh 0 0 8vw;
+      .title {
+        font-size: clamp(1.2vw, 1.2rem, 2vw);
+        font-family: "Nunito", sans-serif;
+        font-weight: 500;
+      }
+      .heading {
+        font-size: clamp(4vw, 4rem, 5vw);
+        font-family: "Nunito", sans-serif;
+        font-weight: 800;
+      }
+      button {
+        background-color: white;
+        color: rgb(45, 158, 170); 
+        padding: 1rem 2rem; 
+        cursor: pointer;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}
